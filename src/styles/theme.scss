@@ -1,0 +1,64 @@
+// Primary Colors
+$primary-color: #148c4a;
+$primary-light: #1ab25e;
+$primary-dark: #0f6736;
+
+// Secondary Colors
+$secondary-color: #2196f3;
+$secondary-light: #64b5f6;
+$secondary-dark: #1976d2;
+
+// Neutral Colors
+$background-color: #ffffff;
+$surface-color: #f5f5f5;
+$text-primary: #333333;
+$text-secondary: #666666;
+$text-disabled: #888888;
+
+// Status Colors
+$error-color: #f44336;
+$success-color: #4caf50;
+$warning-color: #ff9800;
+$info-color: #2196f3;
+
+// Utility Colors
+$divider-color: #dddddd;
+$overlay-color: rgba(0, 0, 0, 0.1);
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+// Mixins
+@mixin elevation-1 {
+  box-shadow: 0 2px 4px $shadow-color;
+}
+
+@mixin elevation-2 {
+  box-shadow: 0 4px 8px $shadow-color;
+}
+
+@mixin glass-effect {
+  background-color: rgba($background-color, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+// Theme Classes
+.primary-bg {
+  background-color: $primary-color;
+  color: $background-color;
+}
+
+.secondary-bg {
+  background-color: $secondary-color;
+  color: $background-color;
+}
+
+.surface {
+  background-color: $surface-color;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
