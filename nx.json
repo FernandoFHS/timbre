@@ -23,5 +23,9 @@
       "default"
     ]
   },
-  "nxCloudId": "67f7f040b33abe2af48dd623"
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default"
+    }
+  }
 }

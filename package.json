@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "build:prod": "nx build --configuration=production",
+    "test": "nx test",
+    "deploy": "npm run build:prod && echo 'Build completed. Push to main branch to deploy to GitHub Pages.'"
   },
   "dependencies": {
     "@angular/animations": "^18.1.0",
