@@ -4,11 +4,18 @@
     <title>Timbre</title>
     <meta charset="UTF-8" />
     <base href="/">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts loaded at runtime to avoid build issues -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   </head>
   <body>
     <app-root>Loading...</app-root>
+    <script>
+      // Load Google Fonts dynamically to avoid build-time internet dependency
+      const link = document.createElement('link');
+      link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+      link.rel = 'stylesheet';
+      document.head.appendChild(link);
+    </script>
   </body>
 </html>
